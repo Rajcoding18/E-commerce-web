@@ -14,16 +14,19 @@ function App() {
   return (
     <div>
 
-      < BrowserRouter>
+      < BrowserRouter basename="/">
         <Navbar />
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>}/>
           <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>}/>
           <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>}/>
-          <Route path='product' element={<Product/>}>
+          
+          {/* <Route path='product' element={<Product/>}>
             <Route path='productID' element={<Product/>} />
-          </Route>
+          </Route> */}
+          <Route path='/product/:productID' element={<Product />} />
+
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LogniSignup/>}/>
         </Routes>
@@ -32,5 +35,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

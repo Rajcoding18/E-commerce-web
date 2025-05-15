@@ -10,6 +10,10 @@
     align-items: center;
     gap: 20px;
 }
+.footer-logo img{
+    width: 170px;
+    margin-top: 10px;
+}
 .footer-logo p{
     color: #383838;
     font-size: 46px;
@@ -51,4 +55,73 @@
     border-radius: 10px;
     height: 3px;
     background-color: #c7c7c7;
+}
+
+@media(max-width:800px){
+    .footer{
+        gap: 20px;
+    }
+    .footer-logo{
+        gap: 10px;
+        align-items: end;
+    }
+    .footer-logo img{
+        quotes: 40px;
+    }
+    .footer-logo p{
+        font-size: 25px;
+    }
+    .footer-links{
+        font-size: 14px;
+        gap: 10px;
+    }
+    .footer-social-icon img{
+        width: 22px;
+    }
+    .footer-copyright{
+        font-size: 13px  ;
+    }
+}
+@media(max-width:800px){
+    .footer{
+        gap: 18px;
+    }
+    .footer-logo{
+        gap: 10px;
+        align-items: end;
+    }
+    .footer-logo img{
+        quotes: 30px;
+    }
+    .footer-logo p{
+        font-size: 20px;
+    }
+    .footer-links{
+        font-size: 13px;
+        gap: 7px;
+    }
+    .footer-social-icon img{
+        width: 20px;
+    }
+    .footer-copyright{
+        font-size: 13px  ;
+    }
+    ul.footer-links{
+        padding: 0px;
+    }
+}
+@media(max-width:500px){
+    .shopcategory-loadmore {
+        margin: 50px 36%;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .shopcategory-indexSort{
+        margin-inline: 10%;
+        padding: 10px;
+    }
+    .footer{
+        margin-left: 8%;
+    }
 }
